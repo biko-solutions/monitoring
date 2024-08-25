@@ -20,7 +20,7 @@ User=node_exporter
 Group=node_exporter
 Type=simple
 Restart=on-failure
-ExecStart=/usr/bin/node_exporter
+ExecStart=/usr/bin/node_exporter --collector.processes
 
 [Install]
 WantedBy=multi-user.target
